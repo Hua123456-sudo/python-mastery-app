@@ -1,0 +1,21 @@
+"""Shared UI text constants for user-visible English copy."""
+
+BACK_HOME = "Back Home"
+HOME = "Home"
+LESSONS = "Lessons"
+START_QUIZ = "Start Quiz"
+ANALYTICS = "Analytics"
+ADMIN_PANEL = "Admin Panel"
+ALGORITHM_VISUALIZATION = "Algorithm Visualization"
+LOG_OUT = "Log Out"
+
+SUCCESS = "Success"
+ERROR = "Error"
+CORRECT = "Correct"
+INCORRECT = "Incorrect"
+NO_DATA_AVAILABLE = "No Data Available"
+
+REQUIRE_LOGIN = "Please sign in before continuing."
+ADMIN_ONLY_NOTICE = "Only administrators can open the Admin Panel."
+DEFAULT_ADMIN_HINT = "Default admin account: admin / admin123"
+QUIZ_SETUP_HINT = "Select quiz settings to begin."

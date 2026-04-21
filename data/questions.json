@@ -1,0 +1,883 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "type": "mcq",
+      "category": "Python Basics",
+      "difficulty": "easy",
+      "question": "Which function is used to print output to the console in Python?",
+      "options": [
+        "echo()",
+        "print()",
+        "output()",
+        "show()"
+      ],
+      "answer": "print()",
+      "explanation": "print() is the built-in Python function used to display output in the console.",
+      "source": "exercises.py / Python Basics"
+    },
+    {
+      "id": "q002",
+      "type": "blank",
+      "category": "Variables",
+      "difficulty": "easy",
+      "question": "After executing x = 10, the value stored in x is ____.",
+      "options": [],
+      "answer": "10",
+      "explanation": "The assignment statement stores the value on the right side into the variable on the left side.",
+      "source": "exercises.py / Variables"
+    },
+    {
+      "id": "q003",
+      "type": "mcq",
+      "category": "Conditionals",
+      "difficulty": "easy",
+      "question": "Which keyword means \"otherwise\" in a Python if statement?",
+      "options": [
+        "otherwise",
+        "else",
+        "elif",
+        "except"
+      ],
+      "answer": "else",
+      "explanation": "else defines the branch that runs when the if condition is not satisfied.",
+      "source": "exercises.py / Conditionals"
+    },
+    {
+      "id": "q004",
+      "type": "output",
+      "category": "Loops",
+      "difficulty": "easy",
+      "question": "What is the output of the code below?\nfor i in range(3):\n    print(i)",
+      "options": [],
+      "answer": "0\n1\n2",
+      "explanation": "range(3) generates 0, 1, and 2 in order.",
+      "source": "exercises.py / Loops"
+    },
+    {
+      "id": "q005",
+      "type": "mcq",
+      "category": "Functions",
+      "difficulty": "easy",
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "func",
+        "define",
+        "def",
+        "function"
+      ],
+      "answer": "def",
+      "explanation": "Python uses the def keyword to define a function.",
+      "source": "exercises.py / Functions"
+    },
+    {
+      "id": "q006",
+      "type": "blank",
+      "category": "Strings",
+      "difficulty": "easy",
+      "question": "The result of 'Python'[0] is ____.",
+      "options": [],
+      "answer": "P",
+      "explanation": "String indexing starts at 0, so the first character is P.",
+      "source": "exercises.py / Strings"
+    },
+    {
+      "id": "q007",
+      "type": "mcq",
+      "category": "Lists",
+      "difficulty": "easy",
+      "question": "Which method is most commonly used to add one element to the end of a list?",
+      "options": [
+        "add()",
+        "append()",
+        "push()",
+        "insert_end()"
+      ],
+      "answer": "append()",
+      "explanation": "append() adds a single element to the end of a list.",
+      "source": "exercises.py / Lists"
+    },
+    {
+      "id": "q008",
+      "type": "output",
+      "category": "Variables",
+      "difficulty": "easy",
+      "question": "What is the output of the code below?\na = 5\nb = 2\nprint(a + b)",
+      "options": [],
+      "answer": "7",
+      "explanation": "The two integers are added together, so the result is 7.",
+      "source": "exercises.py / Variables"
+    },
+    {
+      "id": "q009",
+      "type": "mcq",
+      "category": "Conditionals",
+      "difficulty": "medium",
+      "question": "Which keyword is usually paired with if when checking multiple branches?",
+      "options": [
+        "elseif",
+        "elif",
+        "then",
+        "switch"
+      ],
+      "answer": "elif",
+      "explanation": "elif is short for else if and is used for multiple conditional branches.",
+      "source": "exercises.py / Conditionals"
+    },
+    {
+      "id": "q010",
+      "type": "output",
+      "category": "Loops",
+      "difficulty": "medium",
+      "question": "What is the output of the code below?\ncount = 0\nfor i in range(1, 4):\n    count += i\nprint(count)",
+      "options": [],
+      "answer": "6",
+      "explanation": "count accumulates 1, 2, and 3, so the final result is 6.",
+      "source": "exercises.py / Loops"
+    },
+    {
+      "id": "q011",
+      "type": "blank",
+      "category": "Functions",
+      "difficulty": "medium",
+      "question": "The keyword usually used to return a result from a function is ____.",
+      "options": [],
+      "answer": "return",
+      "explanation": "return sends a function result back to the caller.",
+      "source": "exercises.py / Functions"
+    },
+    {
+      "id": "q012",
+      "type": "output",
+      "category": "Strings",
+      "difficulty": "medium",
+      "question": "What is the output of the code below?\nname = 'Py'\nprint(name * 3)",
+      "options": [],
+      "answer": "PyPyPy",
+      "explanation": "Multiplying a string by 3 repeats it three times.",
+      "source": "exercises.py / Strings"
+    },
+    {
+      "id": "q013",
+      "type": "mcq",
+      "category": "Lists",
+      "difficulty": "medium",
+      "question": "What is the length of the list [1, 2, 3]?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "len"
+      ],
+      "answer": "3",
+      "explanation": "The list contains three elements, so its length is 3.",
+      "source": "exercises.py / Lists"
+    },
+    {
+      "id": "q014",
+      "type": "blank",
+      "category": "Python Basics",
+      "difficulty": "easy",
+      "question": "A single-line comment in Python usually starts with ____.",
+      "options": [],
+      "answer": "#",
+      "explanation": "# is the single-line comment marker in Python.",
+      "source": "exercises.py / Python Basics"
+    },
+    {
+      "id": "q015",
+      "type": "output",
+      "category": "Functions",
+      "difficulty": "medium",
+      "question": "What is the output of the code below?\ndef add(a, b):\n    return a + b\n\nprint(add(2, 5))",
+      "options": [],
+      "answer": "7",
+      "explanation": "The add function returns 2 + 5, so the output is 7.",
+      "source": "exercises.py / Functions"
+    },
+    {
+      "id": "q016",
+      "type": "mcq",
+      "category": "Loops",
+      "difficulty": "medium",
+      "question": "Which option is most suitable for visiting every element in a list?",
+      "options": [
+        "if",
+        "for",
+        "def",
+        "class"
+      ],
+      "answer": "for",
+      "explanation": "A for loop is commonly used to iterate through each element in a sequence.",
+      "source": "exercises.py / Loops"
+    },
+    {
+      "id": "q017",
+      "type": "blank",
+      "category": "Lists",
+      "difficulty": "medium",
+      "question": "The result of [1, 2, 3][1] is ____.",
+      "options": [],
+      "answer": "2",
+      "explanation": "List indexing starts at 0, so index 1 refers to the second element, which is 2.",
+      "source": "exercises.py / Lists"
+    },
+    {
+      "id": "q018",
+      "type": "output",
+      "category": "Conditionals",
+      "difficulty": "medium",
+      "question": "What is the output of the code below?\nnum = 8\nif num > 10:\n    print('A')\nelse:\n    print('B')",
+      "options": [],
+      "answer": "B",
+      "explanation": "Because 8 is not greater than 10, the else branch runs.",
+      "source": "exercises.py / Conditionals"
+    },
+    {
+      "id": "q019",
+      "type": "mcq",
+      "category": "Leap Year",
+      "difficulty": "easy",
+      "question": "Which year should return True for isLeapYear using the standard leap-year rule?",
+      "options": [
+        "1900",
+        "2000",
+        "2100",
+        "2023"
+      ],
+      "answer": "2000",
+      "explanation": "A year divisible by 400 is a leap year, so 2000 returns True.",
+      "source": "isLeapYear"
+    },
+    {
+      "id": "q020",
+      "type": "blank",
+      "category": "Leap Year",
+      "difficulty": "medium",
+      "question": "If a year is divisible by 400, isLeapYear should return ____.",
+      "options": [],
+      "answer": "True",
+      "explanation": "A year divisible by 400 always counts as a leap year in the standard rule.",
+      "source": "isLeapYear"
+    },
+    {
+      "id": "q021",
+      "type": "output",
+      "category": "Leap Year",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(isLeapYear(2024))",
+      "options": [],
+      "answer": "True",
+      "explanation": "2024 is divisible by 4 and not divisible by 100, so it is a leap year.",
+      "source": "isLeapYear"
+    },
+    {
+      "id": "q022",
+      "type": "mcq",
+      "category": "Palindrome",
+      "difficulty": "easy",
+      "question": "Which string should return True when passed to isPalindrome?",
+      "options": [
+        "python",
+        "level",
+        "coding",
+        "screen"
+      ],
+      "answer": "level",
+      "explanation": "A palindrome reads the same from left to right and right to left.",
+      "source": "isPalindrome"
+    },
+    {
+      "id": "q023",
+      "type": "blank",
+      "category": "Palindrome",
+      "difficulty": "medium",
+      "question": "The result of isPalindrome('radar') is ____.",
+      "options": [],
+      "answer": "True",
+      "explanation": "radar is identical when reversed, so it is a palindrome.",
+      "source": "isPalindrome"
+    },
+    {
+      "id": "q024",
+      "type": "output",
+      "category": "Palindrome",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(isPalindrome('python'))",
+      "options": [],
+      "answer": "False",
+      "explanation": "python is not the same when reversed, so the function returns False.",
+      "source": "isPalindrome"
+    },
+    {
+      "id": "q025",
+      "type": "mcq",
+      "category": "Prime Numbers",
+      "difficulty": "easy",
+      "question": "Which number should return True for isPrime?",
+      "options": [
+        "21",
+        "29",
+        "35",
+        "39"
+      ],
+      "answer": "29",
+      "explanation": "29 has no positive divisors other than 1 and itself.",
+      "source": "isPrime"
+    },
+    {
+      "id": "q026",
+      "type": "blank",
+      "category": "Prime Numbers",
+      "difficulty": "medium",
+      "question": "The smallest prime number greater than 1 is ____.",
+      "options": [],
+      "answer": "2",
+      "explanation": "2 is the first number that has exactly two positive divisors.",
+      "source": "isPrime"
+    },
+    {
+      "id": "q027",
+      "type": "output",
+      "category": "Prime Numbers",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(isPrime(9))",
+      "options": [],
+      "answer": "False",
+      "explanation": "9 can be divided by 3, so it is not a prime number.",
+      "source": "isPrime"
+    },
+    {
+      "id": "q028",
+      "type": "mcq",
+      "category": "Binary Conversion",
+      "difficulty": "easy",
+      "question": "What decimal value should binaryToDecimal('1010') return?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": "10",
+      "explanation": "1010 in binary equals 8 + 2, which is 10.",
+      "source": "binaryToDecimal"
+    },
+    {
+      "id": "q029",
+      "type": "blank",
+      "category": "Binary Conversion",
+      "difficulty": "medium",
+      "question": "The decimal value of binaryToDecimal('111') is ____.",
+      "options": [],
+      "answer": "7",
+      "explanation": "111 in binary equals 4 + 2 + 1, which is 7.",
+      "source": "binaryToDecimal"
+    },
+    {
+      "id": "q030",
+      "type": "output",
+      "category": "Binary Conversion",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(binaryToDecimal('10001'))",
+      "options": [],
+      "answer": "17",
+      "explanation": "10001 in binary equals 16 + 1, which is 17.",
+      "source": "binaryToDecimal"
+    },
+    {
+      "id": "q031",
+      "type": "mcq",
+      "category": "Character Digits",
+      "difficulty": "easy",
+      "question": "If charsToInt(['1', '2', '3']) joins digit characters into one integer, what should it return?",
+      "options": [
+        "6",
+        "123",
+        "321",
+        "12"
+      ],
+      "answer": "123",
+      "explanation": "The characters form the number 123 when combined in order.",
+      "source": "charsToInt"
+    },
+    {
+      "id": "q032",
+      "type": "blank",
+      "category": "Character Digits",
+      "difficulty": "medium",
+      "question": "If charsToInt(['0', '0', '7']) removes leading zeros naturally, the result is ____.",
+      "options": [],
+      "answer": "7",
+      "explanation": "The digit characters form 007, which is interpreted as integer 7.",
+      "source": "charsToInt"
+    },
+    {
+      "id": "q033",
+      "type": "output",
+      "category": "Character Digits",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(charsToInt(['4', '5']))",
+      "options": [],
+      "answer": "45",
+      "explanation": "The digit characters 4 and 5 combine into the integer 45.",
+      "source": "charsToInt"
+    },
+    {
+      "id": "q034",
+      "type": "mcq",
+      "category": "Search",
+      "difficulty": "easy",
+      "question": "If findElement returns the index of the target or -1 when missing, what is findElement([4, 8, 9], 8)?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "-1"
+      ],
+      "answer": "1",
+      "explanation": "The value 8 is located at index 1 in the list.",
+      "source": "findElement"
+    },
+    {
+      "id": "q035",
+      "type": "blank",
+      "category": "Search",
+      "difficulty": "medium",
+      "question": "If the target is not found, findElement should return ____.",
+      "options": [],
+      "answer": "-1",
+      "explanation": "Using -1 is a common way to indicate that a value was not found.",
+      "source": "findElement"
+    },
+    {
+      "id": "q036",
+      "type": "output",
+      "category": "Search",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(findElement([7, 3, 5], 5))",
+      "options": [],
+      "answer": "2",
+      "explanation": "The value 5 appears at index 2.",
+      "source": "findElement"
+    },
+    {
+      "id": "q037",
+      "type": "mcq",
+      "category": "Array Analysis",
+      "difficulty": "easy",
+      "question": "What is the second largest value in [3, 9, 5, 7]?",
+      "options": [
+        "9",
+        "7",
+        "5",
+        "3"
+      ],
+      "answer": "7",
+      "explanation": "9 is the largest value, so 7 is the second largest.",
+      "source": "find2ndLargest"
+    },
+    {
+      "id": "q038",
+      "type": "blank",
+      "category": "Array Analysis",
+      "difficulty": "medium",
+      "question": "The result of find2ndLargest([5, 1, 9, 7]) is ____.",
+      "options": [],
+      "answer": "7",
+      "explanation": "After the largest value 9, the next largest value is 7.",
+      "source": "find2ndLargest"
+    },
+    {
+      "id": "q039",
+      "type": "output",
+      "category": "Array Analysis",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(find2ndLargest([10, 4, 8, 6]))",
+      "options": [],
+      "answer": "8",
+      "explanation": "10 is the largest value, so 8 is the second largest.",
+      "source": "find2ndLargest"
+    },
+    {
+      "id": "q040",
+      "type": "mcq",
+      "category": "Array Copy",
+      "difficulty": "easy",
+      "question": "If copyArraytoArray returns a copied list, which result is expected for copyArraytoArray([1, 2, 3])?",
+      "options": [
+        "[3, 2, 1]",
+        "[1, 2, 3]",
+        "3",
+        "None"
+      ],
+      "answer": "[1, 2, 3]",
+      "explanation": "Copying preserves the order and values of the original list.",
+      "source": "copyArraytoArray"
+    },
+    {
+      "id": "q041",
+      "type": "blank",
+      "category": "Array Copy",
+      "difficulty": "medium",
+      "question": "If the source list has length 3, the copied list should also have length ____.",
+      "options": [],
+      "answer": "3",
+      "explanation": "A correct copy contains the same number of elements as the source list.",
+      "source": "copyArraytoArray"
+    },
+    {
+      "id": "q042",
+      "type": "output",
+      "category": "Array Copy",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(copyArraytoArray([1, 2]))",
+      "options": [],
+      "answer": "[1, 2]",
+      "explanation": "The copied array should match the original array element by element.",
+      "source": "copyArraytoArray"
+    },
+    {
+      "id": "q043",
+      "type": "mcq",
+      "category": "List Insertion",
+      "difficulty": "easy",
+      "question": "What is insertElement([1, 2, 3], 1, 99) if the value is inserted at the given index?",
+      "options": [
+        "[1, 99, 2, 3]",
+        "[99, 1, 2, 3]",
+        "[1, 2, 99, 3]",
+        "[1, 2, 3, 99]"
+      ],
+      "answer": "[1, 99, 2, 3]",
+      "explanation": "Index 1 means the new value is placed before the current element at index 1.",
+      "source": "insertElement"
+    },
+    {
+      "id": "q044",
+      "type": "blank",
+      "category": "List Insertion",
+      "difficulty": "medium",
+      "question": "After inserting one new element into a list, the list length increases by ____.",
+      "options": [],
+      "answer": "1",
+      "explanation": "Insertion adds exactly one new element to the structure.",
+      "source": "insertElement"
+    },
+    {
+      "id": "q045",
+      "type": "output",
+      "category": "List Insertion",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(insertElement([5, 6, 7], 0, 4))",
+      "options": [],
+      "answer": "[4, 5, 6, 7]",
+      "explanation": "Inserting at index 0 places the new value at the front of the list.",
+      "source": "insertElement"
+    },
+    {
+      "id": "q046",
+      "type": "mcq",
+      "category": "List Deletion",
+      "difficulty": "easy",
+      "question": "If deleteElement removes the item at the given index, what is deleteElement([10, 20, 30], 1)?",
+      "options": [
+        "[10, 20]",
+        "[20, 30]",
+        "[10, 30]",
+        "[30]"
+      ],
+      "answer": "[10, 30]",
+      "explanation": "Removing the element at index 1 deletes 20 and keeps the remaining items in order.",
+      "source": "deleteElement"
+    },
+    {
+      "id": "q047",
+      "type": "blank",
+      "category": "List Deletion",
+      "difficulty": "medium",
+      "question": "Deleting one element from a list changes its length by ____.",
+      "options": [],
+      "answer": "-1",
+      "explanation": "Removing one element makes the list one item shorter.",
+      "source": "deleteElement"
+    },
+    {
+      "id": "q048",
+      "type": "output",
+      "category": "List Deletion",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(deleteElement([4, 5, 6, 7], 2))",
+      "options": [],
+      "answer": "[4, 5, 7]",
+      "explanation": "The element 6 is removed because it is stored at index 2.",
+      "source": "deleteElement"
+    },
+    {
+      "id": "q049",
+      "type": "mcq",
+      "category": "Frequency Count",
+      "difficulty": "easy",
+      "question": "If frequencyCount(['a', 'b', 'a']) returns counts, what is the count for 'a'?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": "2",
+      "explanation": "The value a appears twice in the list.",
+      "source": "frequencyCount"
+    },
+    {
+      "id": "q050",
+      "type": "blank",
+      "category": "Frequency Count",
+      "difficulty": "medium",
+      "question": "In [1, 1, 2, 3, 3, 3], the frequency of 3 is ____.",
+      "options": [],
+      "answer": "3",
+      "explanation": "The value 3 appears three times.",
+      "source": "frequencyCount"
+    },
+    {
+      "id": "q051",
+      "type": "output",
+      "category": "Frequency Count",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(frequencyCount(['a', 'b', 'a', 'c', 'b', 'a']))",
+      "options": [],
+      "answer": "{'a': 3, 'b': 2, 'c': 1}",
+      "explanation": "The dictionary stores how many times each value appears in the list.",
+      "source": "frequencyCount"
+    },
+    {
+      "id": "q052",
+      "type": "mcq",
+      "category": "Duplicate Analysis",
+      "difficulty": "easy",
+      "question": "If countDuplicates counts how many distinct values appear more than once, what is countDuplicates([1, 2, 2, 3, 3, 3])?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "2",
+      "explanation": "Only the values 2 and 3 are duplicated, so the count is 2.",
+      "source": "countDuplicates"
+    },
+    {
+      "id": "q053",
+      "type": "blank",
+      "category": "Duplicate Analysis",
+      "difficulty": "medium",
+      "question": "If countDuplicates([4, 4, 4]) counts duplicated distinct values, the result is ____.",
+      "options": [],
+      "answer": "1",
+      "explanation": "Only one distinct value is duplicated, even though it appears three times.",
+      "source": "countDuplicates"
+    },
+    {
+      "id": "q054",
+      "type": "output",
+      "category": "Duplicate Analysis",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(countDuplicates([1, 2, 3]))",
+      "options": [],
+      "answer": "0",
+      "explanation": "No value appears more than once, so there are zero duplicates.",
+      "source": "countDuplicates"
+    },
+    {
+      "id": "q055",
+      "type": "mcq",
+      "category": "Array Reversal",
+      "difficulty": "easy",
+      "question": "What is reverseArray([1, 2, 3])?",
+      "options": [
+        "[1, 2, 3]",
+        "[3, 2, 1]",
+        "[2, 3, 1]",
+        "[3, 1, 2]"
+      ],
+      "answer": "[3, 2, 1]",
+      "explanation": "Reversing the array places the last item first and the first item last.",
+      "source": "reverseArray"
+    },
+    {
+      "id": "q056",
+      "type": "blank",
+      "category": "Array Reversal",
+      "difficulty": "medium",
+      "question": "After reversing [9, 8, 7], the first element becomes ____.",
+      "options": [],
+      "answer": "7",
+      "explanation": "The last element becomes the first element in the reversed array.",
+      "source": "reverseArray"
+    },
+    {
+      "id": "q057",
+      "type": "output",
+      "category": "Array Reversal",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(reverseArray(['a', 'b']))",
+      "options": [],
+      "answer": "['b', 'a']",
+      "explanation": "The order of the two elements is swapped in the reversed list.",
+      "source": "reverseArray"
+    },
+    {
+      "id": "q058",
+      "type": "mcq",
+      "category": "Array Rotation",
+      "difficulty": "easy",
+      "question": "What is rotateLeft([1, 2, 3, 4]) if it rotates the list left by one position?",
+      "options": [
+        "[4, 1, 2, 3]",
+        "[2, 3, 4, 1]",
+        "[1, 3, 4, 2]",
+        "[2, 1, 3, 4]"
+      ],
+      "answer": "[2, 3, 4, 1]",
+      "explanation": "A left rotation moves the first element to the end and shifts the others left.",
+      "source": "rotateLeft"
+    },
+    {
+      "id": "q059",
+      "type": "blank",
+      "category": "Array Rotation",
+      "difficulty": "medium",
+      "question": "After rotateLeft([9, 8, 7]), the first element becomes ____.",
+      "options": [],
+      "answer": "8",
+      "explanation": "The original second element moves into the first position after a left rotation.",
+      "source": "rotateLeft"
+    },
+    {
+      "id": "q060",
+      "type": "output",
+      "category": "Array Rotation",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(rotateLeft([5, 6]))",
+      "options": [],
+      "answer": "[6, 5]",
+      "explanation": "Rotating [5, 6] left by one position moves 5 to the end.",
+      "source": "rotateLeft"
+    },
+    {
+      "id": "q061",
+      "type": "mcq",
+      "category": "Pair Sum",
+      "difficulty": "easy",
+      "question": "If twoMovies returns True when any pair sums to the target, what is twoMovies([90, 85, 75, 60, 120, 150, 125], 210)?",
+      "options": [
+        "True",
+        "False",
+        "90",
+        "210"
+      ],
+      "answer": "True",
+      "explanation": "The pair 90 and 120 sums to 210, so the function should return True.",
+      "source": "twoMovies"
+    },
+    {
+      "id": "q062",
+      "type": "blank",
+      "category": "Pair Sum",
+      "difficulty": "medium",
+      "question": "If no pair matches the target, twoMovies should return ____.",
+      "options": [],
+      "answer": "False",
+      "explanation": "When no valid pair exists, the correct Boolean result is False.",
+      "source": "twoMovies"
+    },
+    {
+      "id": "q063",
+      "type": "output",
+      "category": "Pair Sum",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(twoMovies([100, 110, 90], 200))",
+      "options": [],
+      "answer": "True",
+      "explanation": "110 and 90 sum to 200, so the function should return True.",
+      "source": "twoMovies"
+    },
+    {
+      "id": "q064",
+      "type": "mcq",
+      "category": "Word Count",
+      "difficulty": "easy",
+      "question": "If wordCounter counts words separated by spaces, how many words are in \"hello world from python\"?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "4",
+      "explanation": "The sentence contains four separate words.",
+      "source": "wordCounter"
+    },
+    {
+      "id": "q065",
+      "type": "blank",
+      "category": "Word Count",
+      "difficulty": "medium",
+      "question": "If wordCounter(\"\") ignores empty input, the result is ____.",
+      "options": [],
+      "answer": "0",
+      "explanation": "An empty string contains no words.",
+      "source": "wordCounter"
+    },
+    {
+      "id": "q066",
+      "type": "output",
+      "category": "Word Count",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nprint(wordCounter('one two two'))",
+      "options": [],
+      "answer": "3",
+      "explanation": "The function counts total words, not unique words, so the result is 3.",
+      "source": "wordCounter"
+    },
+    {
+      "id": "q067",
+      "type": "mcq",
+      "category": "Matrix Analysis",
+      "difficulty": "easy",
+      "question": "If CountNumRowsWith1ZeroOnly counts rows containing exactly one zero, how many such rows are in [[1, 0], [0, 0], [1, 1]]?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "1",
+      "explanation": "Only the first row contains exactly one zero.",
+      "source": "CountNumRowsWith1ZeroOnly"
+    },
+    {
+      "id": "q068",
+      "type": "blank",
+      "category": "Matrix Analysis",
+      "difficulty": "medium",
+      "question": "For [[1, 0, 1], [1, 1, 1]], CountNumRowsWith1ZeroOnly should return ____.",
+      "options": [],
+      "answer": "1",
+      "explanation": "The first row has exactly one zero, while the second row has none.",
+      "source": "CountNumRowsWith1ZeroOnly"
+    },
+    {
+      "id": "q069",
+      "type": "output",
+      "category": "Matrix Analysis",
+      "difficulty": "hard",
+      "question": "What is the output of the code below?\nmatrix = [[1,1,0],[0,0,1],[1,0,1],[1,1,1]]\nprint(CountNumRowsWith1ZeroOnly(matrix))",
+      "options": [],
+      "answer": "2",
+      "explanation": "Only the first and third rows contain exactly one zero, so the result is 2.",
+      "source": "CountNumRowsWith1ZeroOnly"
+    }
+  ]
+}
