@@ -1,3 +1,1128 @@
 {
-  "records": []
+  "records": [
+    {
+      "record_id": "qr_9fa574915a6b",
+      "username": "admin",
+      "quiz_date": "2026-04-22T19:06:35",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 1,
+      "accuracy": 0.0,
+      "time_spent": 2,
+      "difficulty": "medium",
+      "category": "Array Copy",
+      "wrong_questions": [
+        {
+          "question_id": "q041",
+          "user_answer": "s",
+          "correct_answer": "3"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q041",
+          "category": "Array Copy",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_321f75c7ecff",
+      "username": "admin",
+      "quiz_date": "2026-04-22T19:07:05",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 1,
+      "accuracy": 0.0,
+      "time_spent": 17,
+      "difficulty": "medium",
+      "category": "Array Copy",
+      "wrong_questions": [
+        {
+          "question_id": "q041",
+          "user_answer": "a",
+          "correct_answer": "3"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q041",
+          "category": "Array Copy",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_994d8951e766",
+      "username": "11",
+      "quiz_date": "2026-04-22T19:10:57",
+      "score": 2,
+      "correct_count": 2,
+      "total_questions": 10,
+      "accuracy": 20.0,
+      "time_spent": 28,
+      "difficulty": "easy",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q008",
+          "user_answer": "1",
+          "correct_answer": "7"
+        },
+        {
+          "question_id": "q005",
+          "user_answer": "define",
+          "correct_answer": "def"
+        },
+        {
+          "question_id": "q014",
+          "user_answer": "1",
+          "correct_answer": "#"
+        },
+        {
+          "question_id": "q037",
+          "user_answer": "5",
+          "correct_answer": "7"
+        },
+        {
+          "question_id": "q067",
+          "user_answer": "2",
+          "correct_answer": "1"
+        },
+        {
+          "question_id": "q001",
+          "user_answer": "output()",
+          "correct_answer": "print()"
+        },
+        {
+          "question_id": "q002",
+          "user_answer": "1",
+          "correct_answer": "10"
+        },
+        {
+          "question_id": "q061",
+          "user_answer": "False",
+          "correct_answer": "True"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q008",
+          "category": "Variables",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q005",
+          "category": "Functions",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q014",
+          "category": "Python Basics",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q022",
+          "category": "Palindrome",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q055",
+          "category": "Array Reversal",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q037",
+          "category": "Array Analysis",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q067",
+          "category": "Matrix Analysis",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q001",
+          "category": "Python Basics",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q002",
+          "category": "Variables",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q061",
+          "category": "Pair Sum",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_a91924c3a25d",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:05:20",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 10,
+      "accuracy": 0.0,
+      "time_spent": 29,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q012",
+          "user_answer": "int()",
+          "correct_answer": "str()"
+        },
+        {
+          "question_id": "q013",
+          "user_answer": "1",
+          "correct_answer": "5.0"
+        },
+        {
+          "question_id": "q025",
+          "user_answer": "2",
+          "correct_answer": "1"
+        },
+        {
+          "question_id": "q085",
+          "user_answer": "10",
+          "correct_answer": "True"
+        },
+        {
+          "question_id": "q031",
+          "user_answer": "2",
+          "correct_answer": "HELLO"
+        },
+        {
+          "question_id": "q056",
+          "user_answer": "1",
+          "correct_answer": "Adult"
+        },
+        {
+          "question_id": "q027",
+          "user_answer": "1",
+          "correct_answer": "4.0"
+        },
+        {
+          "question_id": "q057",
+          "user_answer": "elseif",
+          "correct_answer": "elif"
+        },
+        {
+          "question_id": "q088",
+          "user_answer": "3",
+          "correct_answer": "2"
+        },
+        {
+          "question_id": "q058",
+          "user_answer": "xor",
+          "correct_answer": "and"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q012",
+          "category": "Type Conversion",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q013",
+          "category": "Type Conversion",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q025",
+          "category": "Division",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q085",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q031",
+          "category": "Objects",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q056",
+          "category": "If Statements",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q027",
+          "category": "math Module",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q057",
+          "category": "If Statements",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q088",
+          "category": "2D Arrays",
+          "difficulty": "hard",
+          "is_correct": false
+        },
+        {
+          "question_id": "q058",
+          "category": "Boolean Operations",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_0c9360b195b2",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:09:12",
+      "score": 3,
+      "correct_count": 3,
+      "total_questions": 10,
+      "accuracy": 30.0,
+      "time_spent": 36,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q009",
+          "user_answer": "20",
+          "correct_answer": "14"
+        },
+        {
+          "question_id": "q048",
+          "user_answer": "remove()",
+          "correct_answer": "append()"
+        },
+        {
+          "question_id": "q016",
+          "user_answer": "3",
+          "correct_answer": "4"
+        },
+        {
+          "question_id": "q058",
+          "user_answer": "not",
+          "correct_answer": "and"
+        },
+        {
+          "question_id": "q044",
+          "user_answer": "score1",
+          "correct_answer": "class"
+        },
+        {
+          "question_id": "q093",
+          "user_answer": "To sort ascending",
+          "correct_answer": "To swap elements from both ends toward the center"
+        },
+        {
+          "question_id": "q020",
+          "user_answer": "Because 0.3 is an integer",
+          "correct_answer": "Because of floating-point representation error"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q009",
+          "category": "Arithmetic",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q048",
+          "category": "Lists",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q016",
+          "category": "Mixed Data Types",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q014",
+          "category": "Type Conversion",
+          "difficulty": "medium",
+          "is_correct": true
+        },
+        {
+          "question_id": "q058",
+          "category": "Boolean Operations",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q044",
+          "category": "Variables",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q093",
+          "category": "Arrays",
+          "difficulty": "hard",
+          "is_correct": false
+        },
+        {
+          "question_id": "q008",
+          "category": "Arithmetic",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q020",
+          "category": "Floating Point",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q024",
+          "category": "Division",
+          "difficulty": "medium",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "record_id": "qr_76314aaf2440",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:12:29",
+      "score": 3,
+      "correct_count": 3,
+      "total_questions": 10,
+      "accuracy": 30.0,
+      "time_spent": 27,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q041",
+          "user_answer": "1",
+          "correct_answer": "Alice is 25"
+        },
+        {
+          "question_id": "q036",
+          "user_answer": "1",
+          "correct_answer": "python"
+        },
+        {
+          "question_id": "q097",
+          "user_answer": "To make the code shorter",
+          "correct_answer": "Because even numbers greater than 2 cannot be prime factors after the even check"
+        },
+        {
+          "question_id": "q046",
+          "user_answer": "{}",
+          "correct_answer": "[]"
+        },
+        {
+          "question_id": "q038",
+          "user_answer": "1",
+          "correct_answer": "a-b-c"
+        },
+        {
+          "question_id": "q056",
+          "user_answer": "1",
+          "correct_answer": "Adult"
+        },
+        {
+          "question_id": "q053",
+          "user_answer": "[5]",
+          "correct_answer": "(5,)"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q041",
+          "category": "Formatted Strings",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q036",
+          "category": "Strings",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q101",
+          "category": "Python Basics",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q097",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q051",
+          "category": "Tuples",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q046",
+          "category": "Lists",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q038",
+          "category": "Strings",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q025",
+          "category": "Division",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q056",
+          "category": "If Statements",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q053",
+          "category": "Tuples",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_3c4ed945e390",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:16:03",
+      "score": 4,
+      "correct_count": 4,
+      "total_questions": 10,
+      "accuracy": 40.0,
+      "time_spent": 25,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q075",
+          "user_answer": "5",
+          "correct_answer": "4"
+        },
+        {
+          "question_id": "q040",
+          "user_answer": "format(name)",
+          "correct_answer": "f\"Hello {name}\""
+        },
+        {
+          "question_id": "q091",
+          "user_answer": "%",
+          "correct_answer": "//"
+        },
+        {
+          "question_id": "q097",
+          "user_answer": "To make the code shorter",
+          "correct_answer": "Because even numbers greater than 2 cannot be prime factors after the even check"
+        },
+        {
+          "question_id": "q085",
+          "user_answer": "False",
+          "correct_answer": "True"
+        },
+        {
+          "question_id": "q053",
+          "user_answer": "[5]",
+          "correct_answer": "(5,)"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q075",
+          "category": "Arrays",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q040",
+          "category": "Formatted Strings",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q091",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q097",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q044",
+          "category": "Variables",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q051",
+          "category": "Tuples",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q006",
+          "category": "Expressions",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q048",
+          "category": "Lists",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q085",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q053",
+          "category": "Tuples",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_8f37ba5bf97c",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:18:10",
+      "score": 1,
+      "correct_count": 1,
+      "total_questions": 10,
+      "accuracy": 10.0,
+      "time_spent": 31,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q041",
+          "user_answer": "1",
+          "correct_answer": "Alice is 25"
+        },
+        {
+          "question_id": "q036",
+          "user_answer": "1",
+          "correct_answer": "python"
+        },
+        {
+          "question_id": "q042",
+          "user_answer": "Adds commas only",
+          "correct_answer": "Shows the number with 2 decimal places"
+        },
+        {
+          "question_id": "q021",
+          "user_answer": "string",
+          "correct_answer": "decimal"
+        },
+        {
+          "question_id": "q074",
+          "user_answer": "2",
+          "correct_answer": "-1"
+        },
+        {
+          "question_id": "q101",
+          "user_answer": "display()",
+          "correct_answer": "print()"
+        },
+        {
+          "question_id": "q014",
+          "user_answer": "It returns hello",
+          "correct_answer": "It causes an error"
+        },
+        {
+          "question_id": "q060",
+          "user_answer": "False",
+          "correct_answer": "True"
+        },
+        {
+          "question_id": "q035",
+          "user_answer": "title()",
+          "correct_answer": "upper()"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q041",
+          "category": "Formatted Strings",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q036",
+          "category": "Strings",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q042",
+          "category": "Formatted Strings",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q100",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": true
+        },
+        {
+          "question_id": "q021",
+          "category": "Floating Point",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q074",
+          "category": "Arrays",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q101",
+          "category": "Python Basics",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q014",
+          "category": "Type Conversion",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q060",
+          "category": "Boolean Operations",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q035",
+          "category": "Strings",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_75da12b4c629",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:21:44",
+      "score": 2,
+      "correct_count": 2,
+      "total_questions": 10,
+      "accuracy": 20.0,
+      "time_spent": 21,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q053",
+          "user_answer": "[5]",
+          "correct_answer": "(5,)"
+        },
+        {
+          "question_id": "q037",
+          "user_answer": "('apple', 'banana')",
+          "correct_answer": "['apple', 'banana']"
+        },
+        {
+          "question_id": "q070",
+          "user_answer": "40",
+          "correct_answer": "0"
+        },
+        {
+          "question_id": "q026",
+          "user_answer": "using math",
+          "correct_answer": "import math"
+        },
+        {
+          "question_id": "q059",
+          "user_answer": "1",
+          "correct_answer": "True"
+        },
+        {
+          "question_id": "q068",
+          "user_answer": "11",
+          "correct_answer": "0"
+        },
+        {
+          "question_id": "q052",
+          "user_answer": "1",
+          "correct_answer": "15"
+        },
+        {
+          "question_id": "q100",
+          "user_answer": "1",
+          "correct_answer": "2"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q053",
+          "category": "Tuples",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q082",
+          "category": "Arrays",
+          "difficulty": "hard",
+          "is_correct": true
+        },
+        {
+          "question_id": "q037",
+          "category": "Strings",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q070",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q026",
+          "category": "math Module",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q059",
+          "category": "Boolean Operations",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q068",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q052",
+          "category": "Tuples",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q100",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q021",
+          "category": "Floating Point",
+          "difficulty": "medium",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "record_id": "qr_f189c050913c",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:23:05",
+      "score": 2,
+      "correct_count": 2,
+      "total_questions": 10,
+      "accuracy": 20.0,
+      "time_spent": 20,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q018",
+          "user_answer": "2",
+          "correct_answer": "5.0"
+        },
+        {
+          "question_id": "q002",
+          "user_answer": "1",
+          "correct_answer": "Hello"
+        },
+        {
+          "question_id": "q085",
+          "user_answer": "10",
+          "correct_answer": "True"
+        },
+        {
+          "question_id": "q049",
+          "user_answer": "1",
+          "correct_answer": "[1, 2, 3]"
+        },
+        {
+          "question_id": "q004",
+          "user_answer": "--",
+          "correct_answer": "#"
+        },
+        {
+          "question_id": "q088",
+          "user_answer": "1",
+          "correct_answer": "2"
+        },
+        {
+          "question_id": "q050",
+          "user_answer": "[4]",
+          "correct_answer": "[1, 2, 3, 4]"
+        },
+        {
+          "question_id": "q077",
+          "user_answer": "1",
+          "correct_answer": "[1, 2, 3]"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q018",
+          "category": "Division",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q002",
+          "category": "Statements",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q085",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q049",
+          "category": "Lists",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q004",
+          "category": "Comments",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q088",
+          "category": "2D Arrays",
+          "difficulty": "hard",
+          "is_correct": false
+        },
+        {
+          "question_id": "q050",
+          "category": "Lists",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q071",
+          "category": "Patterns",
+          "difficulty": "easy",
+          "is_correct": true
+        },
+        {
+          "question_id": "q039",
+          "category": "Strings",
+          "difficulty": "medium",
+          "is_correct": true
+        },
+        {
+          "question_id": "q077",
+          "category": "Arrays",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_89e7b1893ab5",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:26:11",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 2,
+      "accuracy": 0.0,
+      "time_spent": 5,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q072",
+          "user_answer": "4",
+          "correct_answer": "7"
+        },
+        {
+          "question_id": "q018",
+          "user_answer": "2",
+          "correct_answer": "5.0"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q072",
+          "category": "Patterns",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q018",
+          "category": "Division",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_d7946558b773",
+      "username": "admin",
+      "quiz_date": "2026-04-22T23:28:29",
+      "score": 1,
+      "correct_count": 1,
+      "total_questions": 2,
+      "accuracy": 50.0,
+      "time_spent": 4,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q083",
+          "user_answer": "1",
+          "correct_answer": "[4, 3, 2, 1]"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q082",
+          "category": "Arrays",
+          "difficulty": "hard",
+          "is_correct": true
+        },
+        {
+          "question_id": "q083",
+          "category": "Arrays",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_1c5cfa55fd2d",
+      "username": "admin",
+      "quiz_date": "2026-04-23T12:20:34",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 2,
+      "accuracy": 0.0,
+      "time_spent": 10,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q097",
+          "user_answer": "To make the code shorter",
+          "correct_answer": "Because even numbers greater than 2 cannot be prime factors after the even check"
+        },
+        {
+          "question_id": "q034",
+          "user_answer": "2",
+          "correct_answer": "[1, 2, 3, 4]"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q097",
+          "category": "Algorithms",
+          "difficulty": "medium",
+          "is_correct": false
+        },
+        {
+          "question_id": "q034",
+          "category": "Objects",
+          "difficulty": "medium",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "record_id": "qr_d290429f7ed4",
+      "username": "admin",
+      "quiz_date": "2026-04-23T12:25:57",
+      "score": 0,
+      "correct_count": 0,
+      "total_questions": 2,
+      "accuracy": 0.0,
+      "time_spent": 13,
+      "difficulty": "all",
+      "category": "all",
+      "wrong_questions": [
+        {
+          "question_id": "q001",
+          "user_answer": "show()",
+          "correct_answer": "print()"
+        },
+        {
+          "question_id": "q025",
+          "user_answer": "2",
+          "correct_answer": "1"
+        }
+      ],
+      "question_results": [
+        {
+          "question_id": "q001",
+          "category": "Python Basics",
+          "difficulty": "easy",
+          "is_correct": false
+        },
+        {
+          "question_id": "q025",
+          "category": "Division",
+          "difficulty": "easy",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

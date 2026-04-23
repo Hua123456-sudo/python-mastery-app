@@ -3,7 +3,7 @@ from __future__ import annotations
 import pygame
 import pygame_gui
 
-from src.config import ACCENT, CARD_BORDER, SUCCESS, TEXT_FAINT, TEXT_MUTED, TEXT_PRIMARY, UI_FONT_NAME, WARNING
+from src.ui.theme import ACCENT, ALGORITHM_ACCENT, CARD_BG_SELECTED, CARD_BORDER, CARD_MUTED, CHIP_TEXT_DARK, SUCCESS, TEXT_FAINT, TEXT_MUTED, TEXT_PRIMARY, UI_FONT_NAME, WARNING
 from src.ui.base_screen import BaseScreen
 
 
@@ -36,48 +36,48 @@ class AlgorithmScreen(BaseScreen):
             relative_rect=pygame.Rect(178, 118, 124, 44),
             text="Back Home",
             manager=self.app.ui_manager,
-            object_id="#secondary_button",
+            object_id="#back_home_button",
         )
 
         self.array_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(190, 256, 150, 46),
+            relative_rect=pygame.Rect(190, 276, 150, 46),
             text="Arrays",
             manager=self.app.ui_manager,
             object_id=self._tab_object_id("arrays"),
         )
         self.list_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(190, 314, 150, 46),
+            relative_rect=pygame.Rect(190, 334, 150, 46),
             text="Lists",
             manager=self.app.ui_manager,
             object_id=self._tab_object_id("lists"),
         )
         self.tree_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(190, 372, 150, 46),
+            relative_rect=pygame.Rect(190, 392, 150, 46),
             text="Trees",
             manager=self.app.ui_manager,
             object_id=self._tab_object_id("trees"),
         )
 
         self.play_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(930, 546, 70, 42),
+            relative_rect=pygame.Rect(930, 586, 70, 42),
             text="Play",
             manager=self.app.ui_manager,
             object_id="#primary_button",
         )
         self.pause_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(1010, 546, 70, 42),
+            relative_rect=pygame.Rect(1010, 586, 70, 42),
             text="Pause",
             manager=self.app.ui_manager,
             object_id="#secondary_button",
         )
         self.next_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(930, 596, 70, 42),
+            relative_rect=pygame.Rect(930, 636, 70, 42),
             text="Next",
             manager=self.app.ui_manager,
             object_id="#secondary_button",
         )
         self.reset_button = pygame_gui.elements.UIButton(
-            relative_rect=pygame.Rect(1010, 596, 70, 42),
+            relative_rect=pygame.Rect(1010, 636, 70, 42),
             text="Reset",
             manager=self.app.ui_manager,
             object_id="#ghost_button",
@@ -135,12 +135,23 @@ class AlgorithmScreen(BaseScreen):
 
         title_font = pygame.font.SysFont(UI_FONT_NAME, 30, bold=True)
         subtitle_font = pygame.font.SysFont(UI_FONT_NAME, 17)
-        surface.blit(title_font.render("Algorithm Visualization", True, pygame.Color(TEXT_PRIMARY)), (334, 118))
-        surface.blit(subtitle_font.render("Pure pygame visuals for classroom demonstration.", True, pygame.Color(TEXT_MUTED)), (336, 154))
+        
+        # Draw header panel
+        header_rect = pygame.Rect(170, 110, 1000, 80)
+        self._draw_panel(surface, header_rect, accent=ALGORITHM_ACCENT)
+        
+        # Center title and subtitle
+        title_text = title_font.render("Algorithm Visualization", True, pygame.Color(TEXT_PRIMARY))
+        title_rect = title_text.get_rect(center=(header_rect.centerx, header_rect.centery - 16))
+        surface.blit(title_text, title_rect)
+        
+        subtitle_text = subtitle_font.render("Pure pygame visuals for classroom demonstration.", True, pygame.Color(TEXT_MUTED))
+        subtitle_rect = subtitle_text.get_rect(center=(header_rect.centerx, header_rect.centery + 16))
+        surface.blit(subtitle_text, subtitle_rect)
 
-        self._draw_panel(surface, left_panel, title="Algorithms", accent="#1E293B")
-        self._draw_panel(surface, center_panel, title=self.session.label, subtitle=self.session.description, accent=ACCENT)
-        self._draw_panel(surface, right_panel, title="Control", accent="#A78BFA")
+        self._draw_panel(surface, left_panel, title="Algorithms", accent=CARD_MUTED)
+        self._draw_panel(surface, center_panel, title=self.session.label, subtitle=self.session.description, accent=ALGORITHM_ACCENT)
+        self._draw_panel(surface, right_panel, title="Control", accent=ALGORITHM_ACCENT)
 
         self._draw_left_sidebar(surface, left_panel)
         self._draw_visualization(surface, center_panel)
@@ -221,16 +232,16 @@ class AlgorithmScreen(BaseScreen):
 
         for index, value in enumerate(array):
             rect = pygame.Rect(start_x + index * (box_w + spacing), y, box_w, box_h)
-            color = pygame.Color("#20304B")
+            color = pygame.Color(CARD_MUTED)
             if index in checked_indices:
-                color = pygame.Color("#1E3A5F")
+                color = pygame.Color(CARD_BG_SELECTED)
             if index == current_index:
                 color = pygame.Color(ACCENT)
             if index == found_index:
                 color = pygame.Color(SUCCESS)
             pygame.draw.rect(surface, color, rect, border_radius=16)
             pygame.draw.rect(surface, pygame.Color(CARD_BORDER), rect, width=1, border_radius=16)
-            value_color = "#08111F" if index == current_index or index == found_index else TEXT_PRIMARY
+            value_color = CHIP_TEXT_DARK if index == current_index or index == found_index else TEXT_PRIMARY
             value_surface = font_body.render(str(value), True, pygame.Color(value_color))
             surface.blit(value_surface, value_surface.get_rect(center=rect.center))
             index_surface = font_small.render(str(index), True, pygame.Color(TEXT_MUTED))
@@ -257,12 +268,12 @@ class AlgorithmScreen(BaseScreen):
 
         for index, value in enumerate(nodes):
             rect = pygame.Rect(start_x + index * (node_w + spacing), y, node_w, node_h)
-            color = pygame.Color(ACCENT if index in highlight_indices else "#20304B")
+            color = pygame.Color(ALGORITHM_ACCENT if index in highlight_indices else CARD_MUTED)
             if index in highlight_indices and index == len(nodes) - 1 and len(highlight_indices) > 1:
                 color = pygame.Color(SUCCESS)
             pygame.draw.rect(surface, color, rect, border_radius=15)
             pygame.draw.rect(surface, pygame.Color(CARD_BORDER), rect, width=1, border_radius=15)
-            value_color = "#08111F" if index in highlight_indices else TEXT_PRIMARY
+            value_color = CHIP_TEXT_DARK if index in highlight_indices else TEXT_PRIMARY
             value_surface = font_body.render(str(value), True, pygame.Color(value_color))
             surface.blit(value_surface, value_surface.get_rect(center=rect.center))
             centers.append(rect.center)
@@ -279,7 +290,7 @@ class AlgorithmScreen(BaseScreen):
             floating_rect = pygame.Rect(panel.centerx - 38, panel.top + 176, node_w, node_h)
             pygame.draw.rect(surface, pygame.Color(WARNING), floating_rect, border_radius=15)
             pygame.draw.rect(surface, pygame.Color(CARD_BORDER), floating_rect, width=1, border_radius=15)
-            value_surface = font_body.render(str(floating_node.get("value", "?")), True, pygame.Color("#08111F"))
+            value_surface = font_body.render(str(floating_node.get("value", "?")), True, pygame.Color(CHIP_TEXT_DARK))
             surface.blit(value_surface, value_surface.get_rect(center=floating_rect.center))
             note_surface = font_small.render("New node", True, pygame.Color(TEXT_MUTED))
             surface.blit(note_surface, note_surface.get_rect(center=(floating_rect.centerx, floating_rect.bottom + 18)))
@@ -319,14 +330,14 @@ class AlgorithmScreen(BaseScreen):
             center = positions.get(key)
             if center is None:
                 continue
-            color = pygame.Color("#20304B")
+            color = pygame.Color(CARD_MUTED)
             if key in visited:
                 color = pygame.Color(SUCCESS)
             if key == current_node:
-                color = pygame.Color(ACCENT)
+                color = pygame.Color(ALGORITHM_ACCENT)
             pygame.draw.circle(surface, color, center, 28)
             pygame.draw.circle(surface, pygame.Color(CARD_BORDER), center, 28, 2)
-            text_color = "#08111F" if key in visited or key == current_node else TEXT_PRIMARY
+            text_color = CHIP_TEXT_DARK if key in visited or key == current_node else TEXT_PRIMARY
             value_surface = font_body.render(str(node.get("value", "")), True, pygame.Color(text_color))
             surface.blit(value_surface, value_surface.get_rect(center=center))
 

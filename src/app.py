@@ -5,7 +5,7 @@ from pathlib import Path
 import pygame
 import pygame_gui
 
-from src.config import APP_TITLE, FPS, THEME_PATH, WINDOW_HEIGHT, WINDOW_WIDTH
+from src.config import APP_TITLE, FPS, MIN_WINDOW_HEIGHT, MIN_WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_WIDTH
 from src.router import Router
 from src.services.analytics_service import AnalyticsService
 from src.services.auth_service import AuthService
@@ -21,6 +21,7 @@ from src.ui.lesson_screen import LessonScreen
 from src.ui.login_screen import LoginScreen
 from src.ui.quiz_screen import QuizScreen
 from src.ui.result_screen import ResultScreen
+from src.ui.theme import ensure_theme_file
 
 
 class App:
@@ -31,7 +32,8 @@ class App:
         pygame.display.set_caption(APP_TITLE)
 
         self.window_size = (WINDOW_WIDTH, WINDOW_HEIGHT)
-        self.screen = pygame.display.set_mode(self.window_size)
+        self.min_window_size = (MIN_WINDOW_WIDTH, MIN_WINDOW_HEIGHT)
+        self.screen = pygame.display.set_mode(self.window_size, pygame.RESIZABLE)
         self.clock = pygame.time.Clock()
         self.is_running = True
 
@@ -52,7 +54,7 @@ class App:
         self.pending_notice_message = ""
         self.pending_notice_kind = "info"
 
-        self.ui_manager = pygame_gui.UIManager(self.window_size, THEME_PATH)
+        self.ui_manager = pygame_gui.UIManager(self.window_size, ensure_theme_file())
         self.router = Router(self)
         self._register_screens()
         self.router.navigate("login")
@@ -74,6 +76,9 @@ class App:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.is_running = False
+                    continue
+                if event.type == pygame.VIDEORESIZE:
+                    self._handle_resize(event.w, event.h)
                     continue
 
                 self.ui_manager.process_events(event)
@@ -113,3 +118,13 @@ class App:
         self.pending_notice_message = ""
         self.pending_notice_kind = "info"
         self.router.navigate("login")
+
+    def _handle_resize(self, width: int, height: int) -> None:
+        clamped_width = max(self.min_window_size[0], width)
+        clamped_height = max(self.min_window_size[1], height)
+        self.window_size = (clamped_width, clamped_height)
+        self.screen = pygame.display.set_mode(self.window_size, pygame.RESIZABLE)
+        self.ui_manager.set_window_resolution(self.window_size)
+        current_screen = self.router.current_screen
+        if current_screen is not None:
+            current_screen.on_resize()

@@ -107,7 +107,7 @@ class QuizSession:
 class QuizService:
     """Handles quiz creation, scoring, and results."""
 
-    QUESTION_COUNT_OPTIONS = (10, 20, 30)
+    QUESTION_COUNT_OPTIONS = (2, 5, 10)
     DIFFICULTY_OPTIONS = ("all", "easy", "medium", "hard")
 
     def __init__(self, question_service: QuestionService) -> None:
@@ -125,7 +125,7 @@ class QuizService:
         category: str,
     ) -> tuple[QuizSession | None, str]:
         if question_count not in self.QUESTION_COUNT_OPTIONS:
-            return None, "Question count must be 10, 20, or 30."
+            return None, "Question count must be 2, 5, or 10."
         if difficulty not in self.DIFFICULTY_OPTIONS:
             return None, "Invalid difficulty setting."
 

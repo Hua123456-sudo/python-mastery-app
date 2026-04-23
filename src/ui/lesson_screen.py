@@ -3,6 +3,7 @@ from __future__ import annotations
 import pygame
 import pygame_gui
 
+from src.ui.theme import QUIZ_ACCENT
 from src.ui.base_screen import BaseScreen
 
 
@@ -24,7 +25,7 @@ class LessonScreen(BaseScreen):
             relative_rect=pygame.Rect(180, 116, 128, 46),
             text="Back Home",
             manager=self.app.ui_manager,
-            object_id="#secondary_button",
+            object_id="#back_home_button",
         )
         title = pygame_gui.elements.UILabel(
             relative_rect=pygame.Rect(250, 118, 320, 44),
@@ -46,6 +47,11 @@ class LessonScreen(BaseScreen):
 
     def draw(self, surface: pygame.Surface) -> None:
         super().draw(surface)
+        
+        # Draw header panel
+        header_rect = pygame.Rect(180, 110, 1000, 80)
+        self._draw_panel(surface, header_rect, accent=QUIZ_ACCENT)
+        
         hero = pygame.Rect(180, 220, 920, 180)
         grid = pygame.Rect(180, 430, 920, 300)
         self._draw_panel(
@@ -53,7 +59,7 @@ class LessonScreen(BaseScreen):
             hero,
             title="Lesson Content Can Be Added Here",
             subtitle="The page is already integrated into the overall product design so future course material can fit in naturally.",
-            accent="#38BDF8",
+            accent=QUIZ_ACCENT,
         )
         self._draw_empty_state(
             surface,

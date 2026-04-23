@@ -9,6 +9,11 @@
       "username": "student123",
       "password_hash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
       "role": "student"
+    },
+    {
+      "username": "11",
+      "password_hash": "4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8",
+      "role": "student"
     }
   ]
 }
